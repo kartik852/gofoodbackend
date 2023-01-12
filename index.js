@@ -1,7 +1,7 @@
 const { request } = require('express');
 const express = require('express')
 const app = express()
-const port = 5000;
+const port = process.env.PORT||5000;
 const fs = require("fs");
 const BASE_URL = process.env.BASE_URL;
 const mongodb=require("./db");
